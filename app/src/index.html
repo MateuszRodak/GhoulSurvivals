@@ -2,21 +2,23 @@
 <html lang="en">
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 <script src="app.js" type="text/javascript"></script>
-<script src="city-model.js" type="text/javascript"></script>
+<script src="controller.js" type="text/javascript"></script>
 <script src="https://unpkg.com/htmlincludejs"></script>
 <head>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="appStyles.css">
+    <link rel="stylesheet" href="navBar/navBar.css">
+    <link rel="stylesheet" href="startView/startView.css">
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<body ng-app="myApp" ng-init="a=5;b=6;" ng-controller="appController">
+<!--<body ng-app="myApp" ng-controller="appController">-->
+<body ng-app="myApp">
 <!--<p> The area is {{a*b}}</p>-->
 <!--<div ng-controller="MyController">
     {{hello}}
 </div>-->
     <include src="./navBar/navBar.html"></include>
-   <!-- <include src="./startView/startView.html"></include>-->
  <include src="./startView/startView.html"></include>
-   <include src="./screen/mainView.html" ></include>
+   <include src="./mainView/mainView.html" ></include>
 </body>
 </html>

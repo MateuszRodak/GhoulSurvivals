@@ -3,9 +3,9 @@
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 <script src="app.js" type="text/javascript"></script>
 <script src="https://unpkg.com/htmlincludejs"></script>
-<script src="city-model.js" type="text/javascript"></script>
+<script src="startViewController.js" type="text/javascript"></script>
 <head>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="startView/startView.css">
     <meta charset="UTF-8">
     <title>Title</title>
 
@@ -14,7 +14,9 @@
 <div class="start-view" ng-controller="starViewController">
     <button onclick="changeMenu();"> START </button>
 
-    <label ng-model="$rootScope.isMenu"> true </label>
+    <label ng-model="$rootScope.isMenu"> {{ $rootScope.isMenu }} </label>
+    <p ng-show="$scope.isMenu2"> ada</p>
+    <p ng-show="!$scope.isMenu2"> ada</p>
 
     <!--mainView
     Show HTML: <input type="checkbox" ng-model="myVar">-->
