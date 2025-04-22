@@ -1,0 +1,27 @@
+.nav-view{
+color: red;
+ margin: 30px;
+ background: blue;
+ height: 50px;
+}
+
+.main-view{
+color: red;
+ margin: 30px;
+ background: green;
+ height: 100%;
+}
+
+.background{
+ height: 100%;
+}
+
+.body{
+color: navy;
+ margin-left: 20px;
+}
+
+.nav-game-name{
+    font-size: 30px;
+    text-align: center;
+}
